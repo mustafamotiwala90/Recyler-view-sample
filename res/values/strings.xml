@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RecylerViewPinterest</string>
+    <string name="action_settings">Settings</string>
+    <string name="image_description">Pin Image</string>
+    <string name="pin_user_text">User</string>
+
+</resources>

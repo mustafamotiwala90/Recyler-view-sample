@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:background="@drawable/customborder"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:weightSum="3" >
+
+    <ImageView
+        android:id="@+id/customPinImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/image_description" />
+
+    <TextView
+        android:id="@+id/customPinDescriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/image_description" />
+
+    <RelativeLayout
+        android:id="@+id/customPinUserLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/customUserImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_description"
+            android:src="@drawable/default_30" />
+
+        <TextView
+            android:id="@+id/customUserTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/customUserImageView"
+            android:text="@string/pin_user_text"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/holo_red_dark" />
+    </RelativeLayout>
+
+</LinearLayout>
